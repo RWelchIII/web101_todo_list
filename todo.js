@@ -21,6 +21,10 @@ function removeItem(todoItem) {
   
     var removeItem = document.getElementById(todoItem.id)
     console.log(removeItem)
+    return function removeItem2() {
+      removeItem.remove()
+
+    }
     
 }
 
